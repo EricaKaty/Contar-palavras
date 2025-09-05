@@ -1,4 +1,4 @@
-# 📄 Contador de palavras, linhas e caracteres
+# 📄 Contar_palavras.py.
 # Recebe um arquivo .txt e retorna a contagem de palavras, linhas e caracteres.
 
 def contar_arquivo(arquivo):
