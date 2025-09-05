@@ -1,4 +1,4 @@
-# 📄 Contar_palavras.py.
+# 📄 Contar_palavras.py
 # Recebe um arquivo .txt e retorna a contagem de palavras, linhas e caracteres.
 
 def contar_arquivo(arquivo):
@@ -30,31 +30,3 @@ if __name__ == "__main__":
     print(f"\n✅ Total de palavras: {total_palavras}")
     print(f"✅ Total de linhas: {total_linhas}")
     print(f"✅ Total de caracteres: {total_caracteres}")
-
-## ⚙️ Como funciona
-
-O script solicita ao usuário o caminho para um arquivo `.txt`, abre o arquivo e realiza a contagem.
-
----
-
-## 🚀 Como executar
-
-1. **Clone o repositório**:
-```bash
-git clone https://github.com/seu-usuario/contador-palavras.git
-cd contador-palavras
-
-
-contador-palavras/
-│── contar_palavras.py   # seu código Python
-│── README.md            # documentação
-│── .gitignore
-__pycache__/           # lista de arquivos para ignorar no Git
-
-
-📊 Contador de palavras, linhas e caracteres
-Digite o caminho do arquivo .txt: exemplo.txt
-
-✅ Total de palavras: 
-✅ Total de linhas: 
-✅ Total de caracteres: 
