@@ -48,12 +48,13 @@ cd contador-palavras
 contador-palavras/
 │── contar_palavras.py   # seu código Python
 │── README.md            # documentação
-│── .gitignore           # lista de arquivos para ignorar no Git
+│── .gitignore
+__pycache__/           # lista de arquivos para ignorar no Git
 
 
 📊 Contador de palavras, linhas e caracteres
 Digite o caminho do arquivo .txt: exemplo.txt
 
-✅ Total de palavras: 120
-✅ Total de linhas: 10
-✅ Total de caracteres: 650
+✅ Total de palavras: 
+✅ Total de linhas: 
+✅ Total de caracteres: 
