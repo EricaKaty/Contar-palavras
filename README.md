@@ -16,9 +16,7 @@ if __name__ == "__main__":
     total = contar_palavras(caminho)
     print(f"Total de palavras: {total}")
 # Não há bibliotecas externas neste projeto.
-__pycache__/
-*.pyc
-venv/
+
 
 # 📝 Contador de Palavras
 
@@ -38,3 +36,9 @@ O script pede o caminho para um arquivo `.txt`, abre o arquivo e conta quantas p
 ```bash
 git clone https://github.com/seu-usuario/contador-palavras.git
 cd contador-palavras
+
+
+contador-palavras/
+│── contar_palavras.py   # seu código Python
+│── README.md            # documentação
+│── .gitignore           # lista de arquivos para ignorar no Git
