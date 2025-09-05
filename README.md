@@ -1,10 +1,32 @@
-# 📝 Contador de Palavras, Linhas e Caracteres
+# 📄 Contar_palavras.py
+# Recebe um arquivo .txt e retorna a contagem de palavras, linhas e caracteres.
 
-Este projeto conta palavras, linhas e caracteres de arquivos `.txt`.
+def contar_arquivo(arquivo):
+    try:
+        with open(arquivo, 'r', encoding='utf-8') as f:
+            conteudo = f.read()
+            
+            palavras = conteudo.split()
+            linhas = conteudo.splitlines()
+            caracteres = len(conteudo)
+            
+            return len(palavras), len(linhas), caracteres
 
-## Como executar
+    except FileNotFoundError:
+        print(f"❌ Arquivo '{arquivo}' não encontrado.")
+        return 0, 0, 0
+    except PermissionError:
+        print(f"❌ Sem permissão para ler o arquivo '{arquivo}'.")
+        return 0, 0, 0
+    except Exception as e:
+        print(f"❌ Ocorreu um erro ao ler o arquivo: {e}")
+        return 0, 0, 0
 
-1. Clone o repositório:
-```bash
-git clone https://github.com/seu-usuario/contador-palavras.git
-cd contador-palavras
+if __name__ == "__main__":
+    print("📊 Contador de palavras, linhas e caracteres")
+    caminho = input("Digite o caminho do arquivo .txt: ")
+    total_palavras, total_linhas, total_caracteres = contar_arquivo(caminho)
+    
+    print(f"\n✅ Total de palavras: {total_palavras}")
+    print(f"✅ Total de linhas: {total_linhas}")
+    print(f"✅ Total de caracteres: {total_caracteres}")
