@@ -17,7 +17,9 @@ python contar_palavras.py exemplo.txt
 
 📊 Contador de palavras, linhas e caracteres Digite o caminho do arquivo .txt: exemplo.txt
 
-✅ Total de palavras: 120 ✅ Total de linhas: 10 ✅ Total de caracteres: 
+✅ Total de palavras: 120 
+✅ Total de linhas: 10 
+✅ Total de caracteres: 543
 
 ## Requisitos
 
